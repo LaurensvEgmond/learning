@@ -28,8 +28,24 @@
 			</div>
 		</div>
 	</div>
-	<div class="notice"><div class="container"><%= notice %></div></div>
-    <div class="alert"><div class="container"><%= alert %></div></div>
+	<% flash.each do |type, message| %>
+		<div class="alert <%= flash_class type %>">
+			<div class="container"><%= message %></div>
+		</div>
+	
+	<% end %>
+
+<!-- 
+	<% if flash[:notice] %>
+		<div class="alert alert-success">
+			<div class="container"><%= notice %></div>
+		</div>
+	<% end %>
+	<% if flash[:alert] %>
+    	<div class="alert alert-danger">
+    		<div class="container"><%= alert %></div>
+    	</div>
+	<% end %> -->
 	<div class="container">
 		<%= yield %>
 	</div>
