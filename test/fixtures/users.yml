@@ -3,3 +3,9 @@ jason:
   last_name: "van Egmond"
   email: "info@dium.nl"
   profile_name: "dium"
+
+tom:
+  first_name: "Tom"
+  last_name: "van Twil"
+  email: "info@terra.com"
+  profile_name: "terra"
