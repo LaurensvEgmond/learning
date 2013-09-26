@@ -9,3 +9,9 @@ tom:
   last_name: "van Twil"
   email: "info@terra.com"
   profile_name: "terra"
+
+mike:
+  first_name: "Mike"
+  last_name: "The Frog"
+  email: "mike@dium.nl"
+  profile_name: "mikethefrog"

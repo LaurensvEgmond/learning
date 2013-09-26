@@ -42,7 +42,6 @@ class StatusesController < ApplicationController
   def update
     @status = current_user.statuses.find(params[:id])
 
-
     respond_to do |format|
       if @status.update(status_params)
         format.html { redirect_to @status, notice: 'Status was successfully updated.' }
